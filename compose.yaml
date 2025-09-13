@@ -1,0 +1,17 @@
+name: robot_dog_docker
+
+services:
+  robot_dog:
+    build: ./
+    image: ros:humle
+    privileged: true
+    stdin_open: true
+    tty: true
+    ports:
+      - "1234:123"
+    network_mode: "host"
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ./robot_dog/:/ros_ws/robot_dog
