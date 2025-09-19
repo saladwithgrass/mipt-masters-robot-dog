@@ -31,3 +31,20 @@ outside docker, "in the real world".
 
 If you crate a file/directory anywhere outside `/ros_ws/robot_dog`, when you
 stop docker conntainer, it will be **lost**. **Permanently**.
+
+# Problems
+## Which to use?
+There are two big unitree repos:
+`unitree_ros` and `unitree_mujoco`. unitree_ros has all the urdf and simulation
+parameters that we need, but it runs gazebo with ros noetic. 
+the other one does not have any useful urdf models, but it has an sdk and ros2
+infrastructure.
+
+Besides, we have not really found any combined urdf models. Maybe we should
+look deeper.
+
+> Answer: we're using unitree_mujoco with models from unitree_ros
+
+
+Look, what i can salvage from unitree_ros: controls, models and sdk.
+Next week: we need a sim with Go1.
