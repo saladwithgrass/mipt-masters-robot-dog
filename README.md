@@ -9,7 +9,12 @@ docker compose build robot_dog
 ```
 
 ## Running the image
-To run the built image, type:
+Before running the image, we have to allow access to display(**Linux only, i do
+no know what to do for windows**):
+```
+xhost +local:
+```
+Then, to run the built image, type:
 ```
 docker compose up -d robot_dog
 ```
