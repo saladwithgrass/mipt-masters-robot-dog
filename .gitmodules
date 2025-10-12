@@ -1,12 +1,12 @@
 [submodule "robot_dog/unitree_mujoco"]
-	path = robot_dog/unitree_modules/unitree_mujoco
+	path = required_modules/unitree_modules/unitree_mujoco
 	url = https://github.com/unitreerobotics/unitree_mujoco
 [submodule "robot_dog/unitree_ros2"]
-	path = robot_dog/unitree_modules/unitree_ros2
+	path = required_modules/unitree_modules/unitree_ros2
 	url = https://github.com/unitreerobotics/unitree_ros2
 [submodule "robot_dog/mujoco"]
-	path = robot_dog/mujoco
+	path = required_modules/mujoco
 	url = https://github.com/google-deepmind/mujoco.git
 [submodule "robot_dog/unitree_sdk2"]
-	path = robot_dog/unitree_modules/unitree_sdk2
+	path = required_modules/unitree_modules/unitree_sdk2
 	url = https://github.com/unitreerobotics/unitree_sdk2
