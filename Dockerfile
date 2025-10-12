@@ -1,7 +1,7 @@
 FROM ros:humble
 SHELL ["/bin/bash", "-c"]
 RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
-ENV ROS_WS /ros_ws
+ENV ROS_WS /root/
 WORKDIR $ROS_WS
 
 ENV REQUIRED_MODULES $ROS_WS/required_modules/
